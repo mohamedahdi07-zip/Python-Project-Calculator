@@ -1,0 +1,22 @@
+print("Welkom bij mijn Python rekenmachine!")
+
+while True:
+    try:
+        getal1 = int(input("Geef getal 1 in: "))
+        getal2 = int(input("Geef getal 2 in: "))
+        bewerking = input("Geef een berekening in (+,-,/,): ")
+
+        if bewerking == "+":
+            print(getal1 + getal2)
+        elif bewerking == "-":
+            print(getal1 - getal2)
+        elif bewerking == "":
+            print(getal1 * getal2)
+        elif bewerking == "/":
+            print(getal1 / getal2)
+        else:
+            print("Ongeldige berekening.")
+    except ZeroDivisionError:
+        print("Deelbaar door 0 is niet toegestaan.")
+    except ValueError:
+        print("Gelieve getallen in te geven.")
