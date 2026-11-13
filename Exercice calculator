@@ -10,7 +10,7 @@ while True:
             print(getal1 + getal2)
         elif bewerking == "-":
             print(getal1 - getal2)
-        elif bewerking == "*":
+        elif bewerking == "":
             print(getal1 * getal2)
         elif bewerking == "/":
             print(getal1 / getal2)
